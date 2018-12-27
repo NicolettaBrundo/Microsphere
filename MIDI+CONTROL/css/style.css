@@ -1,0 +1,161 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 150px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#searchButton {
+  font-size: 40px;
+  border: 4px solid black;
+  padding: 10px 20px;
+  display: block;
+  margin: auto;
+}
+
+.container {
+  margin: auto;
+  width: 960px;
+}
+
+.properties {
+  margin-top: 90px;
+}
+
+.properties.inactive .property {
+  color: #aaa;
+}
+
+.property {
+  border: 1px bottom black;
+  display: block;
+  font-size: 80px;
+  color: #000;
+}
+
+.property .value {
+  text-decoration: underline;
+  color: blue;
+  font-weight: bold;
+}
+
+button{
+  font-size: 63px;
+  border: 2px solid black;
+  padding: 5px 20px;
+  top: -3px;
+  position: relative;
+}
+
+.canvasAnalyser{
+  display: inline-grid;
+}
+
+#canvas{
+  top:30%;
+  background-color: white;
+  border: 5px  solid gold;
+  border-top-style:groove;
+  border-radius:20px;
+}
+#canvasFrequency{
+  top:30%;
+  background-color: white;
+  border: 5px  solid gold;
+  border-top-style:groove;
+  border-radius:20px;
+}
+
+#box{
+  display:inline-grid;
+  position:relative;
+  bottom:150px;
+  translate:(-50%);
+  border: 5px  solid grey;
+  border-top-style:groove;
+}
+
+
+keyboard {
+ position:relative;
+  height: 100px;
+  width: 1500px;
+  padding: 0;
+  margin: 0;
+}
+
+keyboard li { position: relative; float: left; margin: 0; padding: 0;}
+
+.piano {
+  margin: 30px auto;
+  cursor: pointer;
+  list-style-type: none;
+  display:inline-flex;
+}
+
+.black {
+  margin: 0 0 0 -5px;
+  left:-3px;
+  width: 15px;
+  height: 110px;
+  background: #000000;
+  z-index: 1000;
+  border-top: 2px solid #000000;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
+.black:active {
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  -webkit-box-shadow: inset 7px 10px 67px rgba(204,204,204,0.2);
+  -moz-box-shadow: inset 7px 10px 67px 8px rgba(204,204,204,0.2);
+  box-shadow: inset 7px 10px 67px 8px rgba(204,204,204,0.2);
+}
+
+.blackActive {
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  -webkit-box-shadow: inset 7px 10px 67px rgba(204,204,204,0.2);
+  -moz-box-shadow: inset 7px 10px 67px 8px rgba(204,204,204,0.2);
+  box-shadow: inset 7px 10px 67px 8px rgba(204,204,204,0.2);
+}
+
+
+.white {
+  width: 25px;
+  height: 180px;
+  background: #ffffff;
+  border-top: 2px solid #000000;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
+.white:active {
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  -webkit-box-shadow: inset 7px 10px 67px 8px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 7px 10px 67px 8px rgba(0,0,0,0.2);
+  box-shadow: inset 7px 10px 67px 8px rgba(0,0,0,0.2);
+}
+
+.black + .white {
+  margin-left: -12px;
+}
+
+.whiteActive {
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  -webkit-box-shadow: inset 7px 10px 67px 8px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 7px 10px 67px 8px rgba(0,0,0,0.2);
+  box-shadow: inset 7px 10px 67px 8px rgba(0,0,0,0.2);
+}
+
+keyboard li {
+  border-radius: 2px 2px 5px 5px;
+}
